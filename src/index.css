@@ -791,7 +791,7 @@ button:focus-visible {
 
 .clippy__figure {
   flex-shrink: 0;
-  width: 70px;
+  width: 75px;
   /* bob starts after the enter animation finishes */
   animation: clippy-bob 3.5s ease-in-out 0.5s infinite;
 }
