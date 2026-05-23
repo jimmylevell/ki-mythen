@@ -6,6 +6,6 @@ import react from '@vitejs/plugin-react'
 const base = process.env.GITHUB_PAGES === 'true' ? '/ki-mythen/' : '/'
 
 export default defineConfig({
-  plugins: [react()],
-  base,
+    plugins: [react()],
+    base,
 })
