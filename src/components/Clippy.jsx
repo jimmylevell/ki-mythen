@@ -23,7 +23,7 @@ export const CORRECT_MESSAGES = [
 ]
 
 export const INCORRECT_MESSAGES = [
-    { text: 'Ups! Das ist ein häufiges Missverständnis. Aber jetzt weißt du Bescheid! 📚', mood: 'thinking' },
+    { text: 'Ups! Das ist ein häufiges Missverständnis. Aber jetzt weisst du Bescheid! 📚', mood: 'thinking' },
     { text: 'Knapp daneben! Lies die Erklärung – sie hilft wirklich.', mood: 'sad' },
     { text: 'Fast! Selbst KI-Experten werden manchmal überrascht.', mood: 'neutral' },
     { text: 'Kein Problem! Daraus lernt man am meisten. 📎', mood: 'sad' },
@@ -37,9 +37,9 @@ export const WELCOME_MESSAGE = {
 export function getResultClippyMessage(pct) {
     if (pct === 100) return { text: '100 %! Wow – du brauchst mich gar nicht mehr. 🏆', mood: 'excited' }
     if (pct >= 80) return { text: 'Super! Du kennst die Welt der KI wirklich gut!', mood: 'happy' }
-    if (pct >= 60) return { text: 'Gut gemacht! Mit ein bisschen Übung wirst du bald Expertin. 📎', mood: 'neutral' }
+    if (pct >= 60) return { text: 'Gut gemacht! Mit ein bisschen Übung wirst du bald Expert*in. 📎', mood: 'neutral' }
     if (pct >= 40) return { text: 'Nicht schlecht! Die Erklärungen haben geholfen, oder?', mood: 'thinking' }
-    return { text: 'KI ist komplex! Aber jetzt weißt du definitiv mehr als vorher. 📎', mood: 'sad' }
+    return { text: 'KI ist komplex! Aber jetzt weisst du definitiv mehr als vorher. 📎', mood: 'sad' }
 }
 
 // ── SVG character ─────────────────────────────────────────────

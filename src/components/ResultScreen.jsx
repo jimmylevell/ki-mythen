@@ -1,7 +1,7 @@
 import Clippy, { getResultClippyMessage } from './Clippy'
 
 function getScoreMessage(pct) {
-    if (pct === 100) return { emoji: '🏆', text: 'Perfektes Ergebnis! Echte KI-Expertin!' }
+    if (pct === 100) return { emoji: '🏆', text: 'Perfektes Ergebnis! Echte KI-Expert*in!' }
     if (pct >= 80) return { emoji: '🎉', text: 'Hervorragend! Du kennst dich wirklich aus.' }
     if (pct >= 60) return { emoji: '👏', text: 'Gut gemacht! Bleib am Ball.' }
     if (pct >= 40) return { emoji: '📚', text: 'Nicht schlecht! Da ist noch Luft nach oben.' }
@@ -73,8 +73,8 @@ export default function ResultScreen({ questions, answers, config, onRestart }) 
                                 <div className="breakdown-item__meta">
                                     <span
                                         className={`breakdown-item__label ${q.isMyth
-                                                ? 'breakdown-item__label--myth'
-                                                : 'breakdown-item__label--fact'
+                                            ? 'breakdown-item__label--myth'
+                                            : 'breakdown-item__label--fact'
                                             }`}
                                     >
                                         {q.isMyth ? '🚫 Mythos' : '✅ Fakt'}
@@ -103,7 +103,7 @@ export default function ResultScreen({ questions, answers, config, onRestart }) 
                 <p className="conclusion__intro">
                     Dieses Quiz hat gezeigt: Rund um künstliche Intelligenz kursieren zahlreiche Mythen und
                     Missverständnisse. Das ist kein Zufall. KI-Systeme sind komplex, ihre Funktionsweise für
-                    Außenstehende oft undurchsichtig – und die öffentliche Debatte schwankt zwischen blinder
+                    Aussenstehende oft undurchsichtig – und die öffentliche Debatte schwankt zwischen blinder
                     Euphorie und apokalyptischer Hysterie. Beides macht uns zu schlechten Urteilerinnen und
                     Urteilern über eine Technologie, die unsere Gesellschaft grundlegend verändert.
                 </p>
@@ -123,7 +123,7 @@ export default function ResultScreen({ questions, answers, config, onRestart }) 
                     </li>
                     <li>
                         <strong>Verifiziere Ausgaben.</strong> KI-Systeme halluzinieren – sie erfinden Fakten
-                        mit scheinbar großer Sicherheit. Wichtige Informationen sollten immer mit unabhängigen
+                        mit scheinbar grosser Sicherheit. Wichtige Informationen sollten immer mit unabhängigen
                         Quellen abgeglichen werden. Selbstsicherheit im Ton ist kein Beweis für Richtigkeit.
                     </li>
                     <li>
@@ -151,7 +151,7 @@ export default function ResultScreen({ questions, answers, config, onRestart }) 
                 </ul>
 
                 <p className="conclusion__closing">
-                    KI ist ein Werkzeug – ein außerordentlich leistungsstarkes, das gesellschaftliche
+                    KI ist ein Werkzeug – ein ausserordentlich leistungsstarkes, das gesellschaftliche
                     Prozesse beschleunigt und verändert. Aber Werkzeuge sind nur so gut wie die Menschen,
                     die sie einsetzen, gestalten und regulieren. Eine informierte Gesellschaft, die KI
                     hinterfragt und einordnet, ist die beste Garantie dafür, dass diese Technologie zum

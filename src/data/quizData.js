@@ -41,10 +41,10 @@ export const questions = [
     {
         id: 2,
         statement:
-            'Maschinelles Lernen mit „neuronalen Netzen" bedeutet, dass Computer so lernen wie Menschen.',
-        isMyth: true,
+            'KI-Modelle benötigen riesige Mengen an Trainingsdaten, um zuverlässig zu funktionieren.',
+        isMyth: false,
         explanation:
-            'Neuronale Netze sind leistungsstark, aber weit davon entfernt, die Komplexität des menschlichen Gehirns zu erreichen oder menschliche Fähigkeiten nachzuahmen. Der Begriff „neuronal" ist eine biologische Analogie, keine wörtliche Beschreibung.',
+            'Stimmt! Moderne grosse Sprachmodelle werden auf hunderten Milliarden Wörtern trainiert. Die Qualität, Vielfalt und Menge der Trainingsdaten ist entscheidend für die Leistung. Weniger Daten bedeuten in der Regel ein schwächeres oder stärker eingeschränktes Modell.',
         category: 'Lernen',
         difficulty: 'easy',
         emoji: '🕸️',
@@ -64,27 +64,29 @@ export const questions = [
         statement: 'KI gibt auf dieselbe Frage immer dieselbe Antwort.',
         isMyth: true,
         explanation:
-            'Generative KI basiert auf Wahrscheinlichkeiten, nicht auf vorprogrammierten Skripten. Dieselbe Frage kann unterschiedliche Antworten liefern – je nach Zufälligkeit, Temperatureinstellungen oder kleinen Unterschieden im Prompt. Das ist großartig für Brainstorming – und frustrierend für Konsistenz.',
+            'Generative KI basiert auf Wahrscheinlichkeiten, nicht auf vorprogrammierten Skripten. Dieselbe Frage kann unterschiedliche Antworten liefern – je nach Zufälligkeit, Temperatureinstellungen oder kleinen Unterschieden im Prompt. Das ist grossartig für Brainstorming – und frustrierend für Konsistenz.',
         category: 'Verhalten',
         difficulty: 'easy',
         emoji: '🎲',
     },
     {
         id: 5,
-        statement: 'Größere KI-Modelle sind immer besser.',
-        isMyth: true,
+        statement:
+            'Kleinere, spezialisierte KI-Modelle können bei bestimmten Aufgaben grössere Allzweckmodelle übertreffen.',
+        isMyth: false,
         explanation:
-            'Größe ist nicht immer besser. Ein riesiges Modell wie GPT-4 mag breit glänzen, aber ein kleineres, spezialisiertes Modell kann es bei einer bestimmten Aufgabe übertreffen – oft zu einem Bruchteil der Kosten und des Energieverbrauchs.',
+            'Richtig! Ein kompaktes Modell, das gezielt auf einen Anwendungsfall trainiert wurde, schlägt ein riesiges Allzweckmodell bei genau dieser Aufgabe – oft zu einem Bruchteil der Kosten und des Energieverbrauchs. Grösse allein ist kein Qualitätsmerkmal.',
         category: 'Modelle',
         difficulty: 'medium',
         emoji: '📏',
     },
     {
         id: 6,
-        statement: 'KI ist eine neue Technologie.',
-        isMyth: true,
+        statement:
+            'Die Grundlagen der modernen KI – wie neuronale Netze und maschinelles Lernen – wurden bereits in den 1950er Jahren entwickelt.',
+        isMyth: false,
         explanation:
-            'Obwohl KI heute eine rasante Entwicklung erlebt, existieren ihre grundlegenden Konzepte und Anwendungen seit Jahrzehnten. Das Perzeptron wurde 1958 erfunden, und das Feld hat seitdem mehrere „KI-Winter" und „KI-Frühling" durchlebt.',
+            'Korrekt! Alan Turings bahnbrechendes Paper „Computing Machinery and Intelligence" erschien 1950, das erste Perzeptron 1958. Das KI-Feld hat seitdem mehrere „KI-Winter" (Stagnation) und „KI-Frühlinge" (Aufbruch) erlebt. Der heutige Boom baut auf Jahrzehnten Forschung auf.',
         category: 'Geschichte',
         difficulty: 'easy',
         emoji: '📅',
@@ -104,7 +106,7 @@ export const questions = [
         statement: 'Moderne KI ist „superintelligent".',
         isMyth: true,
         explanation:
-            'Spitzenmodelle übertreffen Menschen in spezifischen Aufgaben, besitzen aber noch nicht das einheitliche, allgemeine Denkvermögen des Menschen. Wir befinden uns noch im Zeitalter der schwachen KI – beeindruckend im eigenen Bereich, unzuverlässig außerhalb davon.',
+            'Spitzenmodelle übertreffen Menschen in spezifischen Aufgaben, besitzen aber noch nicht das einheitliche, allgemeine Denkvermögen des Menschen. Wir befinden uns noch im Zeitalter der schwachen KI – beeindruckend im eigenen Bereich, unzuverlässig ausserhalb davon.',
         category: 'Intelligenz',
         difficulty: 'easy',
         emoji: '🤖',
@@ -121,10 +123,11 @@ export const questions = [
     },
     {
         id: 10,
-        statement: 'KI wird Menschen verdrängen und Callcenter-Jobs definitiv überflüssig machen.',
-        isMyth: true,
+        statement:
+            'KI verändert bereits heute nachweislich viele Berufsbilder und automatisiert repetitive Aufgaben.',
+        isMyth: false,
         explanation:
-            'Der Einfluss von KI auf Arbeitsplätze – einschließlich Callcentern – entfaltet sich noch. KI wird viele Rollen verändern, aber das Ausmaß, in dem sie menschliche Arbeit ersetzt oder ergänzt, hängt von Adoptionsraten, Regulierung und gesellschaftlichen Entscheidungen ab. Nur die Zeit wird es zeigen.',
+            'Stimmt! Von KI-Chatbots im Kundenservice über automatisierte Diagnosen in der Medizin bis hin zu Code-Assistenten in der Softwareentwicklung – KI verändert schon jetzt, wie wir arbeiten. Bestehende Berufe wandeln sich, neue entstehen. Das vollständige Ausmass dieser Veränderung ist jedoch noch nicht absehbar.',
         category: 'Zukunft der Arbeit',
         difficulty: 'medium',
         emoji: '📞',
@@ -141,10 +144,11 @@ export const questions = [
     },
     {
         id: 12,
-        statement: 'KI-generierter Text ist immer leicht zu erkennen.',
-        isMyth: true,
+        statement:
+            'Automatische KI-Detektionstools können KI-generierten Text nicht zuverlässig von menschlichem Text unterscheiden.',
+        isMyth: false,
         explanation:
-            'Obwohl Erkennungstools existieren, sind sie unzuverlässig und produzieren falsch-positive sowie falsch-negative Ergebnisse. Gut geschriebener KI-Text kann kaum von menschlichem Text unterschieden werden – weshalb KI-Kompetenz und kritisches Denken immer wichtiger werden.',
+            'Richtig! Bekannte KI-Detektoren liefern häufig falsch-positive (menschlicher Text als KI eingestuft) und falsch-negative Ergebnisse. Gut formulierter KI-Text ist für Tools und Menschen kaum von menschlichem Text zu unterscheiden – deshalb zählen KI-Kompetenz und kritisches Denken mehr denn je.',
         category: 'Erkennung',
         difficulty: 'medium',
         emoji: '🔍',
@@ -162,20 +166,20 @@ export const questions = [
     // ---- Tatsächliche Fakten (isMyth: false) ----
     {
         id: 14,
-        statement: 'Das Training großer KI-Modelle hat einen erheblichen Umwelt-Fußabdruck.',
+        statement: 'Das Training grosser KI-Modelle hat einen erheblichen Umwelt-Fussabdruck.',
         isMyth: false,
         explanation:
-            'Korrekt – das ist eine echte Tatsache! Das Training großer Sprachmodelle kann enorme Mengen an Energie und Wasser zur Kühlung verbrauchen. Forscher untersuchen zunehmend den CO₂-Fußabdruck von KI und arbeiten an effizienteren Trainingsmethoden.',
+            'Korrekt – das ist eine echte Tatsache! Das Training grosser Sprachmodelle kann enorme Mengen an Energie und Wasser zur Kühlung verbrauchen. Forscher untersuchen zunehmend den CO₂-Fussabdruck von KI und arbeiten an effizienteren Trainingsmethoden.',
         category: 'Umwelt',
         difficulty: 'medium',
         emoji: '🌍',
     },
     {
         id: 15,
-        statement: 'KI kann mit großer Selbstsicherheit vollständig falsche Informationen produzieren.',
+        statement: 'KI kann mit grosser Selbstsicherheit vollständig falsche Informationen produzieren.',
         isMyth: false,
         explanation:
-            'Stimmt! KI-Systeme – insbesondere große Sprachmodelle – können „halluzinieren": falsche Informationen mit großer Überzeugung präsentieren. Deshalb sollte man wichtige KI-Ausgaben stets mit verlässlichen Quellen überprüfen.',
+            'Stimmt! KI-Systeme – insbesondere grosse Sprachmodelle – können „halluzinieren": falsche Informationen mit grosser Überzeugung präsentieren. Deshalb sollte man wichtige KI-Ausgaben stets mit verlässlichen Quellen überprüfen.',
         category: 'Verlässlichkeit',
         difficulty: 'easy',
         emoji: '⚠️',
